@@ -40,7 +40,7 @@ export PATH="$PATH:$XDG_DATA_HOME/nvim/mason/bin"
 
 
 # JS
-source js.sh
+source $XDG_DATA_HOME/zsh/js.sh
 
 ##
 # Starship: Prompt customizations
