@@ -3,3 +3,4 @@ brew Grep
 brew tree
 tap homebrew/cask-fonts
 install font-sauce-code-pro-nerd-font
+black
