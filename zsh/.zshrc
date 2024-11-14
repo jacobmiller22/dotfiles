@@ -37,7 +37,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$GOBIN
 export PATH="$PATH:$HOME/.local/scripts"
 export PATH="$PATH:$XDG_DATA_HOME/nvim/mason/bin"
-
+export PATH="$PATH:$HOME/.local/bin"
 
 # JS
 source $XDG_DATA_HOME/zsh/js.sh
@@ -59,5 +59,7 @@ function kpp(){
 }
 
 
+
 eval "$(direnv hook zsh)"
 
+export PATH="$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"

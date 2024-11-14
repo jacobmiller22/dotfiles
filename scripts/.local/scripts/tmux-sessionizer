@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ $# -eq 0 ]]; then
-    selected=$(find ~/projects ~/projects/web-fac -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/projects ~/projects/web-fac ~/dotfiles -mindepth 1 -maxdepth 1 -type d | fzf)
 else
     selected=$1
 fi
