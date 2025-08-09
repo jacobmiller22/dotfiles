@@ -42,6 +42,10 @@ export PATH="$PATH:$HOME/.local/bin"
 # JS
 source $XDG_DATA_HOME/zsh/js.sh
 
+# python
+export PATH="$(pyenv root)/shims:$PATH"
+eval "$(pyenv init --path)"
+
 ##
 # Starship: Prompt customizations
 ##
@@ -57,6 +61,7 @@ alias tms=tmux-sessionizer
 function kpp(){
     kill $(lsof -t -i:$1)
 }
+
 
 
 
