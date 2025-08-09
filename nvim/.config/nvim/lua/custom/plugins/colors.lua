@@ -22,16 +22,9 @@ return {
       -- vim.api.nvim_set_hl(0, 'CursorLineNr', { bg = 'none' })
       vim.api.nvim_set_hl(0, 'LineNr', { bg = 'none' })
       vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none' })
+
+      -- Border customization
+      vim.o.winborder = 'single'
     end,
   },
-  {
-    'mikesmithgh/borderline.nvim',
-    enabled = true,
-    lazy = true,
-    event = 'VeryLazy',
-    config = function()
-      require('borderline').setup({
-      })
-    end,
-  }
 }
