@@ -15,9 +15,11 @@ sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 cd $curr
 rm -rf $stagedir
 
+# Starship
+stow starship
 
 # Setup zsh
 stow zsh
 command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s $(which zsh) $USER
-source ~/.zshrc
+zsh
