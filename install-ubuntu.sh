@@ -7,6 +7,9 @@
 # - zsh
 # - tmux
 
+# Custom scripts
+stow scripts
+
 # (Re)Install Neovim
 curr=$(pwd)
 suffix=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 5) # Generate 5 random chars
