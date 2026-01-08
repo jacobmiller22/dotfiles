@@ -16,6 +16,7 @@ mkdir $stagedir && cd $stagedir
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 sudo rm -rf /opt/nvim-linux-x86_64
 sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+PATH=$PATH:/opt/nvim-linux-x86_64/bin # Add neovim to path
 cd $curr
 rm -rf $stagedir
 
@@ -29,3 +30,4 @@ sudo chsh -s $(which zsh) $USER
 zsh
 
 # Setup tmux
+stow tmux
