@@ -1,7 +1,11 @@
+#!/usr/bin/sh
+
 # Assumes the following is installed
 # - git
 # - curl
 # - stow
+# - zsh
+# - tmux
 
 # (Re)Install Neovim
 curr=$(pwd)
@@ -23,3 +27,5 @@ stow zsh
 command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s $(which zsh) $USER
 zsh
+
+# Setup tmux
