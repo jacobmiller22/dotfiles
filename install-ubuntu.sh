@@ -29,8 +29,9 @@ stow starship
 # Setup zsh
 stow zsh
 command -v zsh | sudo tee -a /etc/shells
-sudo chsh -s $(which zsh) $USER
-zsh
 
 # Setup tmux
 stow tmux
+if [ ! -d $HOME/.config/tmux/plugins/tpm ]; then
+    ssh-add && git clone https://github.com/tmux-plugins/tpm $HOME/.config/tmux/plugins/tpm
+fi
