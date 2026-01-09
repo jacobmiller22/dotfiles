@@ -38,6 +38,7 @@ export PATH=$PATH:$GOBIN
 export PATH="$PATH:$HOME/.local/scripts"
 export PATH="$PATH:$XDG_DATA_HOME/nvim/mason/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 # JS
 source $XDG_DATA_HOME/zsh/js.sh
